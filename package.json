@@ -1,0 +1,15 @@
+{
+  "name": "transferwise",
+  "version": "1.0.0",
+  "description": "boilerplate to kick start a lambda project",
+  "author": "Steve Hoang",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/serverless offline -s dev",
+    "debug": "node --inspect ./node_modules/.bin/serverless offline -s dev"
+  },
+  "devDependencies": {
+    "serverless": "^1.27.3",
+    "serverless-offline": "^3.25.4"
+  }
+}

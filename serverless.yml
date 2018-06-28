@@ -1,0 +1,16 @@
+service: transferwise
+
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+plugins:
+  - serverless-offline
+functions:
+  fulfillment:
+    handler: handler.fulfillment
+    events:
+      - http:
+          path: fulfillment
+          method: post
